@@ -1,0 +1,59 @@
+---
+import Card from "./Card.astro";
+
+---
+<astro:html lang="en">
+  <main>
+    <section class="services-section" id="services">
+      <div class="services-content">
+        <h2>SERVICES</h2>
+        <ul role="list" class="link-card-grid">
+            <Card
+                href="#"
+                title="Individuals Money Transfer"
+                body="Our platform provides indiviudals money transfer with high security."
+                img_url="https://images.unsplash.com/photo-1591033594798-33227a05780d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1518&q=80"
+            />
+            <Card
+                href="#"
+                title="Business Payments"
+                body="We provide business payments."
+                img_url="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=802&q=80"
+            />
+            <Card
+                href="#"
+                title="Real-Time Tracking of Payments"
+                body="Our Platfrom provides real time tracking of your payments"
+                img_url="https://images.unsplash.com/photo-1447015237013-0e80b2786ddc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+            />
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Rest of the sections -->
+  </main>
+</astro:html>
+
+<style>
+    .services-section {
+      padding: 2rem;
+      background: linear-gradient(to bottom right, #eee, #eee);
+      color: white;
+    }
+    .services-content{
+        text-align: center;
+    }
+    .link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        
+    }
+</style>
+
+

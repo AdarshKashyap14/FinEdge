@@ -1,0 +1,49 @@
+
+<nav class="navbar">
+  <ul class="navbar-list">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#scontact">Contact Us</a></li>
+  </ul>
+</nav>
+
+<style>
+  .navbar {
+    background-color: #333;
+    padding: 1rem;
+  }
+
+  .navbar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-list li {
+    margin-right: 1rem;
+  }
+
+  .navbar-list li:last-child {
+    margin-right: 0;
+  }
+
+  .navbar-list li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .navbar-list {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar-list li {
+      margin-bottom: 0.5rem;
+    }
+  }
+</style>
